@@ -1,0 +1,84 @@
+@mixin typography($fontSize, $lineHeight, $fontWeight, $color: var(--main-color)) {
+  margin: 0;
+
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+.typography-body1 {
+  @include typography(var(--font-size-xxl), var(--line-height-l), var(--font-weight-bold));
+}
+
+.typography-body2 {
+  @include typography(var(--font-size-s), var(--line-height-m), var(--font-weight-regular));
+}
+
+.typography-caption {
+  @include typography(var(--font-size-xs), var(--line-height-s), var(--font-weight-regular));
+}
+
+.typography-h1 {
+  @include typography(var(--font-size-xxl), var(--line-height-l), var(--font-weight-bold));
+}
+
+.typography-h2 {
+  @include typography(var(--font-size-xl), var(--line-height-l), var(--font-weight-bold));
+}
+
+.typography-h3 {
+  @include typography(var(--font-size-l), var(--line-height-m), var(--font-weight-bold));
+}
+
+.typography-h4 {
+  @include typography(var(--font-size-m), var(--line-height-m), var(--font-weight-bold));
+}
+
+.typography-link1 {
+  @include typography(
+    var(--font-size-s),
+    var(--line-height-m),
+    var(--font-weight-regular),
+    var(--color-info-500)
+  );
+
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.typography-link1 {
+  @include typography(
+    var(--font-size-s),
+    var(--line-height-m),
+    var(--font-weight-regular),
+    var(--color-info-500)
+  );
+
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.typography-link2 {
+  @include typography(
+    var(--font-size-xs),
+    var(--line-height-s),
+    var(--font-weight-regular),
+    var(--color-info-500)
+  );
+
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.typography-overline {
+  @include typography(var(--font-size-xs), var(--line-height-s), var(--font-weight-bold));
+}
+
+.typography-subtitle1 {
+  @include typography(var(--font-size-m), var(--line-height-m), var(--font-weight-bold));
+}
+
+.typography-subtitle1 {
+  @include typography(var(--font-size-s), var(--line-height-m), var(--font-weight-bold));
+}

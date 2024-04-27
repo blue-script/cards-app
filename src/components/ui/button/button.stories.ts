@@ -4,9 +4,13 @@ import { Button } from './'
 
 const meta = {
   argTypes: {
+    as: {
+      control: { type: 'radio' },
+      options: ['a', 'button'],
+    },
     variant: {
       control: { type: 'radio' },
-      options: ['primary', 'secondary'],
+      options: ['primary', 'secondary', 'primary-icon', 'secondary-icon'],
     },
   },
   component: Button,
@@ -23,6 +27,13 @@ export const Primary: Story = {
     children: 'Primary Button',
     disabled: false,
     variant: 'primary',
+  },
+}
+export const PrimaryIcon: Story = {
+  args: {
+    children: 'Primary Button',
+    disabled: false,
+    variant: 'primary-icon',
   },
 }
 
